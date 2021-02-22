@@ -1,0 +1,27 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.3;
+}
+
+p,
+a,
+li,
+button{
+    font-size: $text;
+    color: $text-color;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+

@@ -1,0 +1,51 @@
+header{
+    width: 100%;
+    padding: 0 100px;
+}
+
+nav{
+    min-height: 10vh;
+    width: 100%;
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    .logo-section{
+        flex: 1 1 30rem;
+        @include flex(row, flex-start, center);
+        h1{
+            padding: 10px;
+        }
+    }
+    ul{
+        flex: 2 2 30rem;
+        @include flex(row, center, center);
+        li{
+            padding: 0 10px;
+        }
+    }
+    ul:nth-child(3){
+        flex: 1 1 30rem;
+        @include flex(row, flex-end, center);
+        li{
+            padding: 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1184px){
+    nav{
+        ul{
+            justify-content: flex-end;
+        }
+    }
+}
+
+@media screen and (max-width: 885px){
+    nav{
+        .logo-section,
+        ul,
+        ul:nth-child(3){
+            justify-content: center;
+            margin: 5px 0;
+        }
+    }
+}

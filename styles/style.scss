@@ -1,0 +1,33 @@
+$main-color: #F53838;
+$secondary-color: #F8F8F8;
+$text-color: #4F5665;
+
+$header1: 4rem;
+$header2: 3rem;
+$header3: 2.6rem;
+$header4: 2rem;
+$text: 1.8rem;
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.secondary-button{
+    border: 1px solid $main-color;
+    background: white;
+    color: $main-color;
+    border-radius: 25px;
+    padding: 10px 25px;
+    &:hover{
+        background: $main-color;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+
+@import 'global';
+@import 'header';
