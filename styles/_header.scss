@@ -36,6 +36,7 @@ nav{
     width: 100%;
     @include flex(row, space-between, center);
     flex-wrap: wrap;
+    position: relative;
     .hero-left{
         flex: 1 1 40rem;
         h1{
@@ -51,6 +52,33 @@ nav{
     }
     .hero-right{
         flex: 1 1 40rem;
+    }
+}
+
+.hero-table{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 90%;
+    margin: auto;
+    background: white;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    @include flex(row, center, center);
+    table{
+        padding: 25px 0;
+        width: 100%;
+        tr{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            ul{
+                @include flex(row, center, center);
+                li{
+                    padding: 0 10px;
+                }
+            }
+        }
     }
 }
         
