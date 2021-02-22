@@ -31,11 +31,45 @@ nav{
     }
 }
 
+.hero{
+    min-height: 90vh;
+    width: 100%;
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    .hero-left{
+        flex: 1 1 40rem;
+        h1{
+            font-size: $header1;
+            .highlight{
+                color: $main-color;
+            }
+        }
+        h4{
+            font-size: $header4;
+            padding: 50px 0;
+        }
+    }
+    .hero-right{
+        flex: 1 1 40rem;
+    }
+}
+        
+
 @media screen and (max-width: 1184px){
     nav{
         ul{
             justify-content: flex-end;
         }
+    }
+}
+
+@media screen and (max-width: 1213px){
+    .hero-left{
+        @include flex(column, center, center);
+        margin: 100px 0 50px 0;    
+    }
+    .hero-right{
+        @include flex(column, center, center);
     }
 }
 
