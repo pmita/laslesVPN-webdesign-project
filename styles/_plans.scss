@@ -30,3 +30,9 @@
     background-color: $main-color;
     color: white;
 }
+
+@media screen and (max-width: 885px){
+    .plans{
+        padding: 50px 25px;
+    }
+}

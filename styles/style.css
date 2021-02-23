@@ -72,6 +72,12 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
 header {
   width: 100%;
   padding: 0 100px;
@@ -254,6 +260,9 @@ nav ul:nth-child(3) li {
 }
 
 @media screen and (max-width: 885px) {
+  header {
+    padding: 0 25px;
+  }
   nav .logo-section,
   nav ul,
   nav ul:nth-child(3) {
@@ -261,6 +270,10 @@ nav ul:nth-child(3) li {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5px 0;
+  }
+  .hero-right img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -409,6 +422,16 @@ nav ul:nth-child(3) li {
   }
 }
 
+@media screen and (max-width: 885px) {
+  .features {
+    padding: 0 25px;
+  }
+  .features img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .plans {
   width: 100%;
   min-height: 100vh;
@@ -470,5 +493,43 @@ nav ul:nth-child(3) li {
 .active {
   background-color: #F53838;
   color: white;
+}
+
+@media screen and (max-width: 885px) {
+  .plans {
+    padding: 50px 25px;
+  }
+}
+
+.global {
+  width: 100%;
+  min-height: 100vh;
+  background: #F8F8F8;
+  padding: 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media screen and (max-width: 885px) {
+  .global {
+    padding: 50px 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

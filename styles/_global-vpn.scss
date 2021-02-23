@@ -1,0 +1,18 @@
+.global{
+    width: 100%;
+    min-height: 100vh;
+    background: $secondary-color;
+    padding: 50px 100px;
+    @include flex(column, space-between, center);
+    img{
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 885px){
+    .global{
+        padding: 50px 25px;
+    }
+}
