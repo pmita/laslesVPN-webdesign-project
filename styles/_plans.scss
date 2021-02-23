@@ -1,0 +1,24 @@
+.plans{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 100px;
+    text-align: center;
+    h4{
+        padding: 25px 0;
+    }
+}
+
+.plans-content{
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    .plan{
+        flex: 1 1 30rem;
+        height: 80vh;
+        @include flex(column, space-evenly, center);
+    }
+}
+
+.active{
+    background-color: $main-color;
+    color: white;
+}
