@@ -1,0 +1,35 @@
+.features{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    img{
+        flex: 1 1 40rem;
+    }
+    .features-content{
+        flex: 1 1 40rem;
+        width: 100%;
+        @include flex(column, center, center);
+        h1{
+            font-size: $header2;
+        }
+        h4{
+            padding: 50px;
+            font-size: $header4;
+        }
+        ul li{
+            img{
+                width: 25px;
+                height: 25px;
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1127px){
+    .features-content{
+        margin: 100px 0 0 0;
+    }
+}

@@ -20,3 +20,15 @@
         }
     }
 }
+
+@media screen and (max-width: 520px){
+    .hero-table{
+        @include flex(column, center, center);
+        table{
+            tr{
+                grid-template-columns: 1fr;
+                grid-auto-rows: minmax(100px, 1fr);
+            }
+        }
+    }
+}
