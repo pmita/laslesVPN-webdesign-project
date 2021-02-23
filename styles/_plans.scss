@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding: 50px 100px;
     text-align: center;
+    background: $secondary-color;
     h4{
         padding: 25px 0;
     }
@@ -14,7 +15,14 @@
     .plan{
         flex: 1 1 30rem;
         height: 80vh;
+        margin: 25px;
         @include flex(column, space-evenly, center);
+        background: white;
+        border: 2px solid #dddddd;
+        border-radius: 10px;
+        &:nth-child(3){
+            border: 2px solid $main-color;
+        }
     }
 }
 
